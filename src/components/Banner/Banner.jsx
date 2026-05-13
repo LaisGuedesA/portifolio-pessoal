@@ -46,8 +46,9 @@ export default function Banner() {
                 <div className={styles.actions}>
 
                     <a
-                        href="#projects"
+                        href="https://github.com/LaisGuedesA?tab=repositories"
                         className={styles.projectsButton}
+                        target='_blank'
                     >
                         View Projects
                         <FiArrowUpRight />
@@ -56,6 +57,7 @@ export default function Banner() {
                     <a
                         href="/resume.pdf"
                         className={styles.resumeButton}
+                        target='_blank'
                     >
                         Download Resume
                     </a>
