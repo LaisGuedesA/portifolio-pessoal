@@ -15,17 +15,17 @@ export default function Contact() {
                         <p className={styles.label}>Email</p>
                         <a
                             className={styles.link}
-                            href="mailto:lais@example.com"
+                            href="mailto:laisguedespt@hotmail.com"
                         >
-                            lais@example.com
+                            laisguedespt@hotmail.com
                         </a>
 
                         <p className={styles.label}>Telefone</p>
                         <a
                             className={styles.link}
-                            href="tel:+5511999999999"
+                            href="tel:+351 960067341"
                         >
-                            +55 (11) 99999-9999
+                            +351 960067341
                         </a>
                     </div>
                 </div>
