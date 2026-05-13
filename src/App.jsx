@@ -1,5 +1,7 @@
 import Menu from "./components/Menu/Menu.jsx";
 import Banner from "./components/Banner/Banner.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 
 export default function App() {
@@ -8,8 +10,9 @@ export default function App() {
     <div>
       <Menu />
       <Banner />
-      < Skills/>
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
-
   )
 }
