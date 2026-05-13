@@ -64,11 +64,11 @@ export default function Banner() {
 
                 <div className={styles.socials}>
 
-                    <a href="#">
+                    <a href="https://github.com/LaisGuedesA" target='_blank'>
                         <FaGithub />
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/lais-almeida-guedes-aa0233394/" target='_blank'>
                         <FaLinkedinIn />
                     </a>
 
