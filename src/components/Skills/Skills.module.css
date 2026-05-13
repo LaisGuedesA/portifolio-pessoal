@@ -69,7 +69,8 @@
 
 .card {
   position: relative;
-  width: 300px;
+  width: 250px;
+  height: 350px;
   padding: 36px 32px;
   overflow: hidden;
   display: flex;
