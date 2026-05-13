@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 export default function App() {
+//comentario teste//
 
   return (
     <div>
