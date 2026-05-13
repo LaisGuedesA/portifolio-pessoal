@@ -59,10 +59,10 @@ export default function Projects() {
             icone: <FaNetworkWired />,
             titulo: "Workit",
             descr: "Plataforma moderna com foco em performance, responsividade e experiência do usuário.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+            img: "./workit.png",
             ferramentas: ["HTML", "CSS", "JavaScript"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/LaisGuedesA/workit.git",
+            demo: "https://workit-lyart.vercel.app/"
         },
 
         {
@@ -70,10 +70,10 @@ export default function Projects() {
             icone: <CgWebsite />,
             titulo: "Website Snap",
             descr: "Landing page interativa com design minimalista e animações suaves.",
-            img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+            img: "./snap.png",
             ferramentas: ["React", "CSS Modules", "Framer Motion"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/LaisGuedesA/snap.git",
+            demo: "https://snap-ra8hv6rg9-lais-guedes-projects.vercel.app/"
         },
 
         {
@@ -81,10 +81,10 @@ export default function Projects() {
             icone: <CgLayoutList />,
             titulo: "Portfólio Moderno",
             descr: "Portfólio pessoal inspirado em interfaces modernas como Linear e Vercel.",
-            img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+            img: "./perfil.png",
             ferramentas: ["Next.js", "TypeScript", "CSS Modules"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/LaisGuedesA/portifolio-pessoal",
+            demo: "https://portifolio-pessoal-rzz5.vercel.app/"
         }
     ];
 
