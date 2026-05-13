@@ -1,18 +1,14 @@
 .contactSection {
   width: 100%;
   max-width: 1400px;
-
   margin: 0 auto;
   padding: 120px 48px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 72px;
-
   position: relative;
   overflow: hidden;
-
   font-family: "Lato", sans-serif;
 }
 
@@ -43,7 +39,6 @@
 .columns {
   width: 100%;
   max-width: 1100px;
-
   display: grid;
   grid-template-columns: 340px 1fr;
   gap: 32px;
@@ -54,32 +49,23 @@
 
 .infoCard {
   position: relative;
-
   overflow: hidden;
-
   border-radius: 28px;
-
   background: rgba(255, 255, 255, 0.03);
-
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   transition:
     transform 0.4s ease,
     border-color 0.4s ease,
     box-shadow 0.4s ease;
-
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .infoCard:hover {
   transform: translateY(-10px);
-
   border-color: rgba(229, 49, 112, 0.25);
-
   box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.35),
     0 0 30px rgba(229, 49, 112, 0.15);
@@ -89,28 +75,20 @@
 
 .blur {
   position: absolute;
-
   width: 240px;
   height: 240px;
-
   background: var(--tertiaryColor);
-
   opacity: 0.12;
-
   filter: blur(120px);
-
   top: -120px;
   right: -120px;
-
   z-index: 1;
 }
 
 .infoContent {
   position: relative;
   z-index: 2;
-
   padding: 40px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,24 +97,17 @@
 
 .label {
   margin: 0;
-
-  color: var(--headline);
-
-  font-size: 0.95rem;
+  color: var(--tertiaryColor);
+  font-size: 1.1rem;
   font-weight: 700;
-
   letter-spacing: 0.5px;
 }
 
 .link {
   width: fit-content;
-
   text-decoration: none;
-
-  color: var(--secundaryColor);
-
+  color: var(--headline);
   font-size: 1rem;
-
   transition:
     transform 0.3s ease,
     color 0.3s ease;
@@ -144,8 +115,7 @@
 
 .link:hover {
   transform: translateX(5px);
-
-  color: var(--headline);
+  color: var(--tertiaryColor);
 }
 
 /* FORM */
@@ -185,18 +155,12 @@
   z-index: 2;
   width: 95%;
   padding: 18px 20px;
-
   border-radius: 18px;
-
   background: rgba(255, 255, 255, 0.04);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   color: var(--headline);
-
   font-size: 1rem;
   font-family: "Lato", sans-serif;
-
   transition:
     border-color 0.3s ease,
     background 0.3s ease,
@@ -212,13 +176,9 @@
 .input:focus,
 .textarea:focus {
   outline: none;
-
   border-color: rgba(229, 49, 112, 0.5);
-
   background: rgba(255, 255, 255, 0.06);
-
   transform: translateY(-2px);
-
   box-shadow:
     0 0 0 4px rgba(229, 49, 112, 0.15),
     0 0 25px rgba(229, 49, 112, 0.15);
@@ -226,7 +186,6 @@
 
 .textarea {
   min-height: 180px;
-
   resize: none;
 }
 
@@ -246,12 +205,9 @@
   );
 
   color: white;
-
   font-size: 1rem;
   font-weight: 700;
-
   cursor: pointer;
-
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -259,7 +215,6 @@
 
 .button:hover {
   transform: translateY(-4px);
-
   box-shadow:
     0 10px 30px rgba(229, 49, 112, 0.35);
 }

@@ -1,18 +1,13 @@
 .heroSection {
   width: 100%;
   max-width: 1400px;
-
   margin: 0 auto;
-
   padding: 120px 48px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 64px;
-
   font-family: "Lato", sans-serif;
-
   position: relative;
 }
 
@@ -20,7 +15,6 @@
 
 .sectionLeft {
   width: 55%;
-
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -30,35 +24,23 @@
 
 .badge {
   position: relative;
-
   width: fit-content;
-
   padding: 14px 22px;
-
   border-radius: 999px;
-
   background: rgba(255, 255, 255, 0.03);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-
   overflow: hidden;
 }
 
 .badgeGlow {
   position: absolute;
-
   width: 120px;
   height: 120px;
-
   background: var(--tertiaryColor);
-
   opacity: 0.15;
-
   filter: blur(70px);
-
   top: -60px;
   left: -40px;
 }
@@ -66,14 +48,10 @@
 .subtitle {
   position: relative;
   z-index: 2;
-
   margin: 0;
-
   color: var(--tertiaryColor);
-
   font-size: 1rem;
   font-weight: 700;
-
   letter-spacing: 0.5px;
 }
 
@@ -87,27 +65,18 @@
 
 .name {
   margin: 0;
-
   font-size: clamp(4rem, 8vw, 6.5rem);
-
   line-height: 0.95;
-
   color: var(--headline);
-
   letter-spacing: -5px;
-
   font-weight: 900;
 }
 
 .title {
   margin: 0;
-
   font-size: clamp(1.5rem, 3vw, 2.4rem);
-
   color: var(--paragraph);
-
   font-weight: 700;
-
   letter-spacing: 4px;
 }
 
@@ -125,13 +94,9 @@
 
 .phrase {
   max-width: 620px;
-
   margin: 0;
-
   color: var(--paragraph);
-
   line-height: 1.9;
-
   font-size: 1.1rem;
 }
 
@@ -149,16 +114,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   padding: 18px 28px;
-
   border-radius: 18px;
-
   text-decoration: none;
-
   font-size: 1rem;
   font-weight: 700;
-
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -177,25 +137,23 @@
 
 .projectsButton:hover {
   transform: translateY(-4px);
-
   box-shadow:
     0 10px 30px rgba(229, 49, 112, 0.35);
+    color: var(--headline);
 }
 
 .resumeButton {
   background: rgba(255, 255, 255, 0.03);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   color: var(--headline);
-
   backdrop-filter: blur(18px);
+
 }
 
 .resumeButton:hover {
   transform: translateY(-4px);
-
   background: rgba(255, 255, 255, 0.06);
+  color: var(--tertiaryColor);
 }
 
 /* SOCIALS */
@@ -209,25 +167,16 @@
 .socials a {
   width: 52px;
   height: 52px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 16px;
-
   font-size: 1.2rem;
-
   color: var(--headline);
-
   text-decoration: none;
-
   background: rgba(255, 255, 255, 0.03);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   backdrop-filter: blur(18px);
-
   transition:
     transform 0.3s ease,
     background 0.3s ease,
@@ -236,9 +185,7 @@
 
 .socials a:hover {
   transform: translateY(-4px);
-
   background: rgba(229, 49, 112, 0.15);
-
   color: var(--tertiaryColor);
 }
 
@@ -246,17 +193,14 @@
 
 .sectionRight {
   width: 45%;
-
   display: flex;
   justify-content: center;
 }
 
 .imageContainer {
   position: relative;
-
   width: 460px;
   height: 460px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,46 +210,31 @@
 
 .glow {
   position: absolute;
-
   width: 350px;
   height: 350px;
-
   background: var(--tertiaryColor);
-
   opacity: 0.18;
-
   filter: blur(120px);
-
   z-index: 1;
 }
 
 .cardBlur {
   position: absolute;
-
   inset: 0;
-
   border-radius: 40px;
-
   background: rgba(255, 255, 255, 0.03);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-
   z-index: 2;
 }
 
 .profileImg {
   position: relative;
   z-index: 3;
-
   width: 92%;
-
   object-fit: cover;
-
   border-radius: 32px;
-
   transition: transform 0.5s ease;
 }
 

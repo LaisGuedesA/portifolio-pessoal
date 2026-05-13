@@ -1,8 +1,56 @@
 import styles from "./Projects.module.css";
+import { useEffect, useRef, useState } from "react";
 
 import { FaNetworkWired, FaGithub } from "react-icons/fa";
 import { CgWebsite, CgLayoutList } from "react-icons/cg";
 import { FiArrowUpRight } from "react-icons/fi";
+
+function LazyImage({ base, alt, className, sizes }) {
+    const imgRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = imgRef.current;
+        if (!img) return;
+
+        if ('IntersectionObserver' in window) {
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            setIsVisible(true);
+                            obs.unobserve(img);
+                        }
+                    });
+                },
+                { rootMargin: '200px' }
+            );
+            obs.observe(img);
+            return () => obs.disconnect();
+        } else {
+            setIsVisible(true);
+        }
+    }, []);
+
+    const img400 = `${base}?w=400&auto=format&fit=crop&q=60`;
+    const img800 = `${base}?w=800&auto=format&fit=crop&q=75`;
+    const img1200 = `${base}?w=1200&auto=format&fit=crop&q=80`;
+
+    return (
+        <img
+            ref={imgRef}
+            src={isVisible ? img800 : undefined}
+            srcSet={isVisible ? `${img400} 400w, ${img800} 800w, ${img1200} 1200w` : undefined}
+            sizes={sizes || "(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"}
+            loading="lazy"
+            decoding="async"
+            alt={alt}
+            className={`${className} ${loaded ? styles.loaded : ''}`}
+            onLoad={() => setLoaded(true)}
+        />
+    );
+}
 
 export default function Projects() {
     const projects = [
@@ -63,11 +111,7 @@ export default function Projects() {
                         <div className={styles.blur}></div>
 
                         <div className={styles.imageWrapper}>
-                            <img
-                                src={projeto.img}
-                                alt={projeto.titulo}
-                                className={styles.image}
-                            />
+                            <LazyImage base={projeto.img} alt={projeto.titulo} className={styles.image} />
                         </div>
 
                         <div className={styles.content}>
