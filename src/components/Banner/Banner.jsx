@@ -55,11 +55,11 @@ export default function Banner() {
                     </a>
 
                     <a
-                        href="/curriculo.lais.pdf"
+                        href="/public/curriculo.lais"
                         className={styles.resumeButton}
                         target='_blank'
                     >
-                        Download Resume
+                        Abrir currículo
                     </a>
 
                 </div>
